@@ -12,9 +12,12 @@ namespace Prework_Calculator
             Console.WriteLine("What kind of mathematical operation would you like to perform?");
             Console.WriteLine("Your options are addition, subtraction, multiplication, and division.");
             Console.WriteLine("Enter + to do addition, - to do subtraction, * to do multiplication, or / to do division.");
+            
             string selectedOperation = Console.ReadLine();
 
+            // Set boolean condition for giving user option to do math operations
             bool doMath = true;
+
             while (doMath == true)
             {
                 switch (selectedOperation)
@@ -58,10 +61,10 @@ namespace Prework_Calculator
                     default:
                         Console.WriteLine("Please enter just the operator of the operation you'd like to perform: +, -, *, or /");
                         Console.WriteLine(" ");
-                        // selectedOperation = Console.ReadLine(); 
                         break;
                 }
 
+                // Give user option to do more math operations, else terminate program
                 Console.WriteLine("To restart and do another math operation, type the operator of the operation you'd like to do. Or hit Enter to exit the program. ");
                 selectedOperation = Console.ReadLine();
                 if (selectedOperation != "+" &&
@@ -73,6 +76,10 @@ namespace Prework_Calculator
                 }
             }
         }
+
+        ////////////////////////////////////
+        // Methods for math operations
+        ////////////////////////////////////
 
         private static void Add(double addend1, double addend2) 
         {
@@ -99,4 +106,3 @@ namespace Prework_Calculator
         }
     }
 }
-
