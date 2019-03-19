@@ -81,25 +81,25 @@ namespace Prework_Calculator
         // Methods for math operations
         ////////////////////////////////////
 
-        private static void Add(double addend1, double addend2) 
+        static void Add(double addend1, double addend2) 
         {
             double sum = addend1 + addend2;
             Console.WriteLine($"The sum of your two numbers is {sum}.");
         }
 
-        private static void Subtract(double minuend, double subtrahend)
+        static void Subtract(double minuend, double subtrahend)
         {
             double difference = minuend - subtrahend;
             Console.WriteLine($"The difference of your two numbers is {difference}.");
         }
 
-        private static void Multiply(double multiplicand, double multiplier)
+        static void Multiply(double multiplicand, double multiplier)
         {
             double product = multiplicand * multiplier;
             Console.WriteLine($"The product of your two numbers is {product}.");
         }
 
-        private static void Divide(double dividend, double diminuend)
+        static void Divide(double dividend, double diminuend)
         {
             double quotient = dividend / diminuend;
             Console.WriteLine($"The quotient of your two numbers is {quotient}.");
